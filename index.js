@@ -29,10 +29,10 @@ function KareninAlani(kenaruzunlugu){
 			4. Hesaplanan çemberin çevresi döndürülecektir.
 		*/
 
-function CemberinCevresi(/* kodlar buraya */){
-	/* kodlar buraya */
+function CemberinCevresi(r){
+	return r*2*pi
 }
-
+console.log(CemberinCevresi(10))
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -47,13 +47,14 @@ function CemberinCevresi(/* kodlar buraya */){
 			4. Hesaplanan çemberin alanı döndürülecektir.
 		*/
 		
-function CemberinAlani(/* kodlar buraya */){
-	/* kodlar buraya */
+function CemberinAlani(r){
+	return Math.pow(r,2)*pi
 }
+console.log(CemberinAlani(10))
 
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-
+console.log(CemberinAlani(15))
 
 
 /* 	GÖREV 3:
@@ -70,44 +71,83 @@ function CemberinAlani(/* kodlar buraya */){
 	
 	
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
-
+console.log(sayilar.length)
 
 
 	var ucetambolunenler, enkucuk, enbuyuk, ucebolunenlerintoplami, besyuzdenkucuksayilar, siralisayilar, tekraredensayilar;
 	
 	//3a çözümü
 
-	/* kodlar buraya */
+	var enbuyuk = sayilar[0]
+	for (let i = 1; i<sayilar.length; i++) {
+		if (enbuyuk<sayilar[i]) {
+			enbuyuk = sayilar[i]
+		}
+	}
+	var enkucuk = sayilar[0]
+	for (let i = 1; i<sayilar.length; i++) {
+		if (enkucuk>sayilar[i]) {
+			enkucuk = sayilar[i]
+		}
+	}
 	
 	
 	
 	// 3b çözümü:
 
-	/* kodlar buraya */
+	ucetambolunenler = sayilar.filter(item => item % 3 === 0)
 		
 		
 		
 	//3c çözümü:
 	
-	/* kodlar buraya */
+	ucebolunenlerintoplami = ucetambolunenler.reduce((a,b) => a+b, 0 )
 
 	
 	
 	//3d çözümü
 	
-	/* kodlar buraya */
+	besyuzdenkucuksayilar = sayilar.filter(item => item<500)
 
 
 
 	//3e çözümü
 
-	/* kodlar buraya */
+	siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b)
 	
 	
 	//3f çözümü
-	
-	/* kodlar buraya */
+/*	tekraredensayilar = (dizi) => {
+		let siraliDizi = dizi.sort()
+		let sonuc = [];
+		for (let i = 0; i < siraliDizi.length - 1; i++) {
+		  if (siraliDizi[i + 1] === siraliDizi[i]) {
+			sonuc.push(siraliDizi[i]);
+		  }
+		}
+		return sonuc;
+	  }
+*/
+tekraredensayilar = [];
+let yeniSayilar = sayilar.sort(function(a,b) {return a-b});
+/*yeniSayilar.sort(function(a,b) {return a-b});*/
 
+let obje ={};
+
+for (let i = 0; i<yeniSayilar.length;i++) {
+	if(yeniSayilar[i in obje]) {
+		obje[yeniSayilar[i]] +=1;
+	} else {
+		obje[yeniSayilar[i]] = 1;
+	}
+};
+
+for (const [key, value] of Object.entries(obje)) {
+	if (value >1) {
+		tekraredensayilar.push(`${key} sayısı ${value} kere tekrar edilmiştir`)
+	}
+}
+console.log(tekraredensayilar)
 
 
 
