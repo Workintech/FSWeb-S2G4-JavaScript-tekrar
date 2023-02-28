@@ -2,16 +2,16 @@
 
 ## Amaçlar
 
-- JavasScipt'te öğrendiklerimizi kullanmak
+- Tabii ki, JavasScipt'te öğrendiklerimizi kullanmak :)
 
 ## Giriş
 
-Artık çalıştığınız iş yerinde tecrübeli bir çalışan oldunuz. Sizden yeni gelen stajyerlere destek olmanız isteniyor. 
+Düşününki, artık çalıştığınız iş yerinde *tecrübeli bir çalışan oldunuz*. Sizden yeni gelen stajyerlere destek olmanız isteniyor. 
 Siz de çalıştığınız farklı projelerdeki bazı ufak görevlerden hazırladığınız bir projeyi, yeni stajyer arkadaşınızla beraber yaptığınızı hayal edin.
 
 ### Commits
 
-Görevleri yaptıkça commit etmeyi unutmayınız.
+Görevleri yaptıkça, her adımda commit etmeyi unutmayın.
 
 ## Talimatlar
 
@@ -19,24 +19,34 @@ Görevleri yaptıkça commit etmeyi unutmayınız.
 
 VSCode ve Komut Satırını Kullanma:
 
-1. Bu repo'yu fork'layın
-2. Frok'ladığınız repo'yu bilgisayarınızda clone'layın
-3. LÜTFEN BRANCH OLUŞTURMAYINIZ! Bu projede main branch'ine push'layacaksın
-4. Repo'nuzun olduğu klasöre gidin (`cd REPO_ADI`)
-5. Vs code'da terminali açın ve `npm install` yazın ve çalıştırın
-6. Sonra `npm run test` yazın ve çalıştırın
-7. Projenizi tamamladıktan sonra `push` yaparak githuba aktarın
+#### Ön Ayarlar
+ Bu *repo*yu *fork*la 
+- VS Code veya harici terminalde, _cd_ komutlarıyla, repoyu yüklemek istediğin dizine git (Örn: ```cd C:/Documents/Git/*SprintNo*/```)
+* *Fork*ladığın repoyu, kendi repolarından bulup, SSH ile bilgisayarına kopyala. ```git clone *ssh_tabından_kopyaladığın_komut*```
+* Clone işlemi bitince, VS Code ile kaynak dosyalarının olduğu klasörü aç (Örn: ```cd *FSWEB-Proje-Adi*```)
+
+#### Node Modüllerini Yükleme
+* VS Code ekranında, _package.json_ ile aynı dizinde, *`.gitignore`* isimli bir dosya oluştur. (Başındaki noktayı unutma).
+*  Bu dosya çine `/node_modules` yaz ve kaydet.
+* VS Code veya harici terminalde, repo olduğu klasöre git (`cd bilgisayarım/Git/SNo/FSWEB-Proje-Adi`)
+ Terminalde, *package.json olan dizindeyken*
+* `npm install` yaz ve yardımcı paketleri bilgisayarına yükle.
+
+#### Çalışma 
+* ```npm run start``` yaz ve projeyi çalışır.  💻
+* Projede parçalar tamamlandıkça, yaptıklarını *commit*le. Yeni BRANCH OLUŞTURMA! Hep *main* branch kullan.
+* Proje tamamlanınca da, son halini *kendi repondaki* *main* branche `push` yaparak githuba aktar.
 
 
 ### Görev 2: Yapılması gerekenler
 
-`index.js` dosyasını bulun ve verilen görevleri tamamlayın.
+`index.js` dosyasını bul ve görevleri, adım adım tamamla.
 
 
 ### Test Etme & Debug Yapma
 
-Projenizin içinde "split terminal"i tıklayarak ikinci bir terminal ekranı açın.
+* Projenizin içinde "split terminal"i tıklayarak ikinci bir terminal ekranı açın.
 
-Açılan ikinci terminalde `npm start` yazıp çalıştırın.
+* İkinci terminalde, ```npm run test``` yaz ve testleri çalıştır.
 
 Bir terminal ekranında testleri çalıştırırken bir diğerinde ise debug yapabileceksin. Kodlarınızda güncelleme yaptıkça ilerlemeyi kontrol için `console.log`u kullanın.
