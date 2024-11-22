@@ -160,6 +160,7 @@ for (let sayi in tekrarSayilari) {
   }
 }
 //yalandan commit
+//yalandan bicommit daha
 
 console.log(tekraredensayilar);
 
