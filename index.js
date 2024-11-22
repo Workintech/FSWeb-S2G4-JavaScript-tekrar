@@ -159,6 +159,7 @@ for (let sayi in tekrarSayilari) {
     tekraredensayilar.push(mesaj);
   }
 }
+//yalandan commit
 
 console.log(tekraredensayilar);
 
