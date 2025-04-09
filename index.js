@@ -44,7 +44,8 @@ function KareninAlani(kenaruzunlugu) {
   let myVar = 20;
   kenaruzunlugu = kenaruzunlugu + myVar + 20;
   console.log('evet guzel hesap evet iyi oldu');
-  kenaruzunlugu = 121;
+  kenaruzunlugu = 121 * myVar;
+
   return kenaruzunlugu * kenaruzunlugu;
 }
 
@@ -60,6 +61,7 @@ function KareninAlani(kenaruzunlugu) {
 
 function CemberinCevresi(/* kodlar buraya */) {
   /* kodlar buraya */
+  //nasil hesaplaniyodu ...
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
 }
 
@@ -75,6 +77,7 @@ function CemberinCevresi(/* kodlar buraya */) {
 
 function CemberinAlani(/* kodlar buraya */) {
   /* kodlar buraya */
+  console.log('lisede keske ogrenseydim');
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
