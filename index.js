@@ -41,6 +41,8 @@ const sayilar = [
 
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
+  let myVar = 20;
+  kenaruzunlugu = kenaruzunlugu + myVar;
   console.log('bu hesabi zor yaptim');
   return kenaruzunlugu * kenaruzunlugu;
 }
