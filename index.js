@@ -44,6 +44,7 @@ function KareninAlani(kenaruzunlugu) {
   let myVar = 20;
   kenaruzunlugu = kenaruzunlugu + myVar;
   console.log('bu hesabi zor yaptim');
+  kenaruzunlugu= 10;
   return kenaruzunlugu * kenaruzunlugu;
 }
 
