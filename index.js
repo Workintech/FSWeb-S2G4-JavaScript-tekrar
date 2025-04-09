@@ -63,6 +63,7 @@ function CemberinCevresi(/* kodlar buraya */) {
   /* kodlar buraya */
   //nasil hesaplaniyodu ...
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  console.log('yeni log');
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
