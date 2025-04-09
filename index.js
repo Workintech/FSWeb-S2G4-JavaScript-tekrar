@@ -42,9 +42,9 @@ const sayilar = [
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
   let myVar = 20;
-  kenaruzunlugu = kenaruzunlugu + myVar;
-  console.log('bu hesabi zor yaptim');
-  kenaruzunlugu= 10;
+  kenaruzunlugu = kenaruzunlugu + myVar + 4;
+  console.log('bu hesabi zor yaptim evet iyi oldu');
+  kenaruzunlugu = 111;
   return kenaruzunlugu * kenaruzunlugu;
 }
 
