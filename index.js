@@ -30,7 +30,7 @@ const sayilar = [
 ];
 
 
-
+//yeni guncelleme
 //yazdim yazdim yoruldum.
 
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
@@ -65,7 +65,7 @@ function CemberinCevresi(/* kodlar buraya */) {
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
-  
+
   console.log('yeni log');
 }
 
