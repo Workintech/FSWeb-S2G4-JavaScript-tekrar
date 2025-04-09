@@ -43,7 +43,7 @@ const sayilar = [
 function KareninAlani(kenaruzunlugu) {
   let myVar = 20;
   kenaruzunlugu = kenaruzunlugu + myVar;
-  console.log('bu hesabi zor yaptim');
+  console.log('evet guzel hesap');
   kenaruzunlugu= 10;
   return kenaruzunlugu * kenaruzunlugu;
 }
