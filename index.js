@@ -63,6 +63,9 @@ function CemberinCevresi(/* kodlar buraya */) {
   /* kodlar buraya */
   //nasil hesaplaniyodu ...
   console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  
   console.log('yeni log');
 }
 
