@@ -9,6 +9,7 @@
 Artık çalıştığınız iş yerinde tecrübeli bir çalışan oldunuz. Sizden yeni gelen stajyerlere destek olmanız isteniyor.
 Siz de çalıştığınız farklı projelerdeki bazı ufak görevlerden hazırladığınız bir projeyi, yeni stajyer arkadaşınızla beraber yaptığınızı hayal edin.
 
+ yeni commit burada
 ### Commits
 
 Görevleri yaptıkça commit etmeyi unutmayınız.

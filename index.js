@@ -29,6 +29,10 @@ const sayilar = [
   867.7,
 ];
 
+
+//yeni guncelleme
+//yazdim yazdim yoruldum.
+
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
 	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
@@ -37,6 +41,11 @@ const sayilar = [
 
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
+  let myVar = 20;
+  kenaruzunlugu = kenaruzunlugu + myVar + 20;
+  console.log('evet guzel hesap evet iyi oldu');
+  kenaruzunlugu = 121 * myVar;
+
   return kenaruzunlugu * kenaruzunlugu;
 }
 
@@ -52,6 +61,12 @@ function KareninAlani(kenaruzunlugu) {
 
 function CemberinCevresi(/* kodlar buraya */) {
   /* kodlar buraya */
+  //nasil hesaplaniyodu ...
+  console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+  console.log('kaudhuiaduaiwgduaywgduyawgduawydg');
+
+  console.log('yeni log');
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -66,6 +81,7 @@ function CemberinCevresi(/* kodlar buraya */) {
 
 function CemberinAlani(/* kodlar buraya */) {
   /* kodlar buraya */
+  console.log('lisede keske ogrenseydim');
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
