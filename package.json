@@ -20,3 +20,6 @@
     "nodemon": "2.0.15"
   }
 }
+npm install
+npm run test
+npm start
