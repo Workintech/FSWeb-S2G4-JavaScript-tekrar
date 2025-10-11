@@ -1,6 +1,6 @@
 ## JavaScript Tekrar
 
-## Amaç
+## Amacımız
 
 - JavasScipt'te öğrendiklerimizi kullanmak
 
