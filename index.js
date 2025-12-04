@@ -97,7 +97,7 @@ let ucetambolunenler,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
-  tekraredensayilar;
+  tekraredensayilar 
 
 // 3a çözümü
 
@@ -136,11 +136,32 @@ besyuzdenkucuksayilar = sayilar.filter(besYuzdenKucukMu);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = [...besyuzdenkucuksayilar].sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+const tekrarSayilari = {};
+
+sayilar.forEach(sayi => {
+  if (tekrarSayilari[sayi]) {
+    tekrarSayilari[sayi] += 1;
+  } else {
+    tekrarSayilari[sayi] = 1;
+  }
+});
+
+tekraredensayilar = [];
+
+Object.keys(tekrarSayilari).forEach(sayiString => {
+  const tekrarSayisi = tekrarSayilari[sayiString];
+
+  if (tekrarSayisi > 1) {
+    const sonucString = `${sayiString} sayısı ${tekrarSayisi} kere tekrar edilmiştir`;
+    tekraredensayilar.push(sonucString);
+  }
+});
+
+console.log("sayilar dizisindeki toplam eleman sayısı:", sayilar.length);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
