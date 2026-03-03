@@ -49,12 +49,16 @@ function KareninAlani(kenaruzunlugu) {
 	3. Çemberin çevresi hesaplanacaktır (💡 İPUCU: Çemberin çevresi = 2 * pi * yarıçap)
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
-
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+ const pi = 3.14159;
+function CemberinCevresi(yaricap) {
+  let cevre = 2 * pi * yaricap;
+	return cevre;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+let yaricap = 5;
+let cevre = CemberinCevresi(yaricap);
+console.log("Çemberin Çevresi: " + cevre);
 
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
@@ -63,12 +67,16 @@ function CemberinCevresi(/* kodlar buraya */) {
 	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
-
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+const pi = 3.14159;
+function CemberinAlani(yaricap, pi) {
+	let alan = pi * Mathpow(yaricap, pi);
+	return alan;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+let yaricap = 15;
+let alan = CemberinAlani(yaricap, pi);
+console.log("Çemberin Alanı: " + alan);
 
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
@@ -99,28 +107,58 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+let enBuyuk = sayilar[0];
+let enKucuk = sayilar[0];
+for (let i= 1; i < sayilar.length; i++) {
+	if (sayilar[i] > enBuyuk) {
+		enbuyuk = sayilar[i];
+	{
+	if(sayilar[i] < enKucuk) {
+		enKucuk = sayilar[i];
+	}
+      }
+	console.log(`En büyük sayı: ${enbuyuk}`);
+        console.log(`En küçük sayı: ${enKucuk}`);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+let ucetambolunenler = [];
+sayilar.forEach(sayi => {
+	if ( sayi % 3 === 0) {
+		ucetambolunenler.push(sayi);
+	}
+      });
+      console.log("3'ün tam katı olan sayılar:", ucetambolunenler);
+		
 
 // 3c çözümü:
 
-/* kodlar buraya */
+let ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
+		console.log(`3'ün tam katı olan sayıların toplamı: ${ucebolunenelerintoplami}`);
 
 // 3d çözümü
 
-/* kodlar buraya */
+let besyuzdenkucuksayilar = sayilar.filter(sayi => sayi < 500);
+		console.log("500'den küçük sayılar:", besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+let siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a-b);
+		console.log("500'den küçük sayılar sıralandı:", siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
-
+let sayiSayac = {};
+		sayilar.forEach(sayi => {
+			sayiSayac[sayi] = (sayiSayac[sayi] || 0) + 1;
+		});
+let tekraredensayilar = [];
+		for (let sayi in sayiSayac) {
+			if (sayiSayac[sayi] > 1) {
+				tekraredensayilar.push(`${sayi} sayısı${sayiSayac[sayi]} kere tekrar edilmiştir`);
+			}
+		      }
+		console.log("Tekrar eden sayılar:", tekraredensayilar);
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
 function sa() {
